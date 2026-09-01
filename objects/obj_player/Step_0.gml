@@ -1,3 +1,5 @@
+ if (global.em_dialogo) exit;
+
 var move_x = 0;
 var move_y = 0;
 
@@ -19,7 +21,7 @@ if (keyboard_check(ord("W"))) {
 
 if (move_x != 0 || move_y != 0) {
     var move_length = point_distance(0, 0, move_x, move_y);
-
+    
     move_x /= move_length;
     move_y /= move_length;
 }

@@ -1,2 +1,1 @@
-move_speed = 4;
 global.em_dialogo = false;

@@ -2,7 +2,7 @@ if (array_length(dialogo_ativo) == 0) exit;
 
 var _no = dialogo_ativo[no_atual];
 
-// Verifica se existem opcoes antes de navegar no menu
+
 if (variable_struct_exists(_no, "opcoes") && is_array(_no.opcoes)) {
     if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
         escolha = max(0, escolha - 1);
@@ -12,7 +12,7 @@ if (variable_struct_exists(_no, "opcoes") && is_array(_no.opcoes)) {
     }
 }
 
-// Avanco ou selecao de opcao
+
 if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
     if (variable_struct_exists(_no, "proximos") && is_array(_no.proximos)) {
         var _proximo = _no.proximos[escolha];
@@ -24,7 +24,7 @@ if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
             escolha = 0; 
         }
     } else {
-        // Se nao houver proximos definidos, apenas fecha
+        
         instance_destroy();
     }
 }

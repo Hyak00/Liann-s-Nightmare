@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
+    "name":"spr_arvore",
+    "path":"sprites/spr_arvore/spr_arvore.yy",
   },
   "spriteMaskId":null,
   "visible":true,
